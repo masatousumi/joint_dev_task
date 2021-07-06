@@ -122,7 +122,7 @@ def q14
   data = { name: "satou", age: 33, address: "saitama", hobby: "soccer", email: "hoge@fuga.com" }
 
   # 以下に回答を記載
-p data.values
+p data.keys
 end
 
 def q15
@@ -130,16 +130,10 @@ def q15
   data2 = { name: "yamada", hobby: "baseball", role: "normal" }
 
   # 以下に回答を記載
-if data1.key?(:age)
-  puts "OK"
-else
-  puts "NG"
-end
-if data2.key?(:age)
-  puts "OK"
-else
-  puts "NG"
-end
+ puts data1.key?(:age)? "OK" : "NG"
+  
+ puts data2.key?(:age)? "OK" : "NG"
+  
 end
 
 def q16
